@@ -9,7 +9,7 @@
       "urls": [
         "/favicon.ico",
         "/index.html",
-        "/main.ca71cb174cd5941f3ded.js",
+        "/main.d5f16ce051edf4872757.js",
         "/manifest.json",
         "/polyfills.7a0e6866a34e280f48e7.js",
         "/runtime.a66f828dca56eeb90e02.js",
@@ -56,9 +56,9 @@
     "/assets/image/go.png": "fe1aaace293b31dec61a604b979d859505b3c675",
     "/assets/js/pace.min.js": "29fa13ea15d5e5c59c48baafc0630de05d66f72e",
     "/favicon.ico": "f6a7584e96629a6cee45e43c4db4b7313e68773c",
-    "/index.html": "132839fac9ab2d7b6145f269bd712a30fe5d191b",
-    "/main.ca71cb174cd5941f3ded.js": "1b34003a0f8ac7898a5aadcb2640042c3ce84159",
-    "/manifest.json": "0cf0c8e4501e557a5398dd537f32cfa3c731f283",
+    "/index.html": "df8db9b54138f715885b86e7f044d55608e8eaca",
+    "/main.d5f16ce051edf4872757.js": "420f331063b9428f02af4091e8b805659719553d",
+    "/manifest.json": "e56a957a5a7dfcad01069e6bc1f32b2d83ad1e8f",
     "/polyfills.7a0e6866a34e280f48e7.js": "9f0b8341c0a0caec1581da2f255eb5dbb8e12303",
     "/runtime.a66f828dca56eeb90e02.js": "078e320cc6fdaf355836c3b1c52b059cdd33fc7e",
     "/styles.eb9adcd526fc87b2c37a.css": "bc7534e8e0d4ca71f5795f73bc8fb21d1a26d610"
