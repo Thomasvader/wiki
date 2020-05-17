@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+@import './assets/css/init.css';
+@import './assets/css/media.css';
+@import './assets/css/active.css';
+@import './assets/css/highlight.css';
+
+html {
+  font-size: 62.5%;
+}
+
+html, body { 
+  height: 100%;
+}
+
+body { 
+  margin: 0; 
+  font-family: 'Roboto', sans-serif; 
+}
+
+.mat-list-option.mat-list-item-focus, .mat-list-option:hover, .mat-nav-list .mat-list-item.mat-list-item-focus, .mat-nav-list .mat-list-item:hover {
+  background-color: rgba(6, 6, 6, 0.1);
+  color: #1976d2 !important;
+}

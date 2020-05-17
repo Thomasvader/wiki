@@ -1,0 +1,37 @@
+<div class="example-container" [class.example-is-mobile]="mobileQuery.matches">
+  <mat-toolbar color="primary" class="example-toolbar">
+    <button mat-icon-button (click)="snav.toggle()" [ngClass]="{'mat-icon-button-active': matIconButtonActive}"><mat-icon>menu</mat-icon></button>
+    <h1 class="example-app-name">Aftersoil wiki</h1>
+    <div class="nav">
+      <a class="none" [routerLink]="[ '/features']">features</a>
+      <a class="" [routerLink]="[ '/interview', 'Front-End/无缝隙轮播图.md']">interview</a>
+      <a class="" [routerLink]="[ '/docs', 'Ajax/Ajax简述.md']">docs</a>
+      <a class="none" [routerLink]="[ '/culture', '汉服古风/汉服图片.md']">culture</a>
+    </div>
+  </mat-toolbar>
+  <mat-sidenav-container class="example-sidenav-container"
+    [style.marginTop.px]="mobileQuery.matches ? 56 : 0">
+    <mat-sidenav 
+      #snav 
+      [mode]="mobileQuery.matches ? 'over' : 'side'"
+      [fixedInViewport]="mobileQuery.matches" fixedTopGap="56"
+      [opened]="mobileQuery.matches ? false : matIconButtonActive ? false : true "
+      [ngClass]="{'mat-sidenav-active': matIconButtonActive}">
+      <mat-nav-list>
+        <ul class="mat-list">
+          <li class="" *ngFor="let property of matListItemData | appProperties">
+            <a class="mat-list-title mat-list-active" [attr.aria-expanded]="active">{{property}}</a>
+            <ul class="Secondary-data" [attr.aria-expanded]="active" #SecondaryData>
+              <li class="Secondary-data-href" *ngFor="let item of matListItemData[property]" [title]="item.title">
+                <a [routerLink]="[$any(item.route), $any(item.href)]">{{item.title}}</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content [@routeAnimation] #backToTop>
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>

@@ -1,0 +1,35 @@
+a {
+  text-decoration: none;
+}
+
+a, a>em, input, input>em, li, li>em, ol, ol>em, p, p>em, ul, ul>em {
+  letter-spacing: .3px;
+  letter-spacing: .03rem;
+}
+
+a, input, li, ol, p, ul {
+  font-size: 14px;
+  font-size: 1.4rem;
+  line-height: 24px;
+  line-height: 2.4rem;
+  font-weight: 400;
+}
+
+hr {
+  border: none;
+  background-color: #dbdbdb;
+  height: 1px;
+}
+
+ul, li, ol {
+  padding: 0;
+  list-style-type: none;
+}
+
+.mat-drawer-transition .mat-drawer-content {
+  /* transition-delay: 250ms;  */
+}
+
+.mat-list, .mat-nav-list, .mat-selection-list {
+  padding-top: 0 !important;
+}

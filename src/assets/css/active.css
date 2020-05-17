@@ -1,0 +1,21 @@
+/* <button mat-icon-button class="mat-icon-button-active"><mat-icon>menu</mat-icon></button> */
+.mat-icon-button-active {
+  opacity: 0 !important;
+  width: 0 !important;
+  z-index: -999 !important;
+}
+
+.mat-sidenav-active {
+  margin-left: -260px;
+}
+
+.mat-icon-button-active ~ h1 {
+  margin-left: 0 !important;
+}
+
+/* app-features */
+
+
+/* app-footer */
+
+

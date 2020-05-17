@@ -1,0 +1,118 @@
+.example-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #eee;
+}
+
+.mat-icon-button {
+  transition-duration: 250ms;
+}
+
+.example-app-name {
+  margin-left: 15px;
+  margin-right: 15px;
+  font-size: 20px;
+  /* transition-duration: 250ms; */
+}
+
+.mat-toolbar.mat-primary {
+  background-color: #1976d2;
+}
+
+.mat-drawer, 
+.mat-drawer-container {
+  background-color: #fff;
+  color: black;
+}
+
+.mat-drawer {
+  width: 260px;
+  background-color: #f8f9fa;
+  /* transition:all 250ms; */
+  box-shadow: 6px 0 8px rgba(0,0,0,.2);
+  user-select: none;
+}
+
+.mat-drawer a {
+  color: black;
+}
+
+.nav {
+  display: flex;
+  height: 100%;
+}
+
+.nav a {
+  display: inline-block;
+  height: 100%;
+  line-height: 64px;
+  text-decoration: none;
+  color: white;
+  padding: 0 15px;
+  font-size: 17px;
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+
+.nav a:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+.mat-list {
+  margin: 0;
+}
+
+.mat-list .mat-list-title {
+  line-height: 45px;
+  padding: 0px 15px;
+  display: block;
+  cursor: pointer;
+  position: relative;
+  transition-duration: 200ms;
+}
+
+.mat-list .mat-list-title::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 14.5px;
+  right: 15px;
+  background-image: url('./../assets/image/go.png');
+  background-size: cover;
+  transition-duration: 300ms;
+}
+
+.mat-list .mat-list-title:hover,
+.mat-list .Secondary-data-href:hover {
+  background-color: #d4dce4;
+  color: #1976d2;
+}
+
+.mat-list .Secondary-data {
+  height: 0;
+  overflow: hidden;
+  transition-duration: 300ms;
+}
+
+.mat-list .Secondary-data-href {
+  padding: 0 10px;
+  text-indent: 20px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  transition-duration: 150ms;
+  cursor: pointer;
+}
+
+.mat-list .Secondary-data-href a {
+  line-height: 45px;
+  display: block;
+}
+
+.mat-list .mat-list-active-img-rotate::after {
+  transform: rotate(90deg);
+}

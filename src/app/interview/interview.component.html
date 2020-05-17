@@ -1,0 +1,5 @@
+<div class="interview-content content-size" id="content" [innerHTML]="InitText | bypassSecurityTrustHtml"></div>
+
+<!-- app-footer start -->
+<app-footer *ngIf="InitText !== ''"></app-footer>
+<!-- app-footer end -->
