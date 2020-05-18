@@ -19,7 +19,7 @@
 }
 
 .mat-toolbar.mat-primary {
-  background-color: #1976d2;
+  background-color: var(--wiki-background-color);
 }
 
 .mat-drawer, 
@@ -89,7 +89,11 @@
 .mat-list .mat-list-title:hover,
 .mat-list .Secondary-data-href:hover {
   background-color: #d4dce4;
-  color: #1976d2;
+  color: var(--wiki-background-color);
+}
+
+.mat-list .Secondary-data-href:hover a {
+  color: var(--wiki-background-color);
 }
 
 .mat-list .Secondary-data {

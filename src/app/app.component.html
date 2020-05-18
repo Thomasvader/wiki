@@ -4,9 +4,9 @@
     <h1 class="example-app-name">Aftersoil wiki</h1>
     <div class="nav">
       <a class="none" [routerLink]="[ '/features']">features</a>
-      <a class="" [routerLink]="[ '/interview', 'Front-End/无缝隙轮播图.md']">interview</a>
-      <a class="" [routerLink]="[ '/docs', 'Ajax/Ajax简述.md']">docs</a>
-      <a class="none" [routerLink]="[ '/culture', '汉服古风/汉服图片.md']">culture</a>
+      <a class="" [routerLink]="[ '/interview', 'Front-End/%E6%97%A0%E7%BC%9D%E9%9A%99%E8%BD%AE%E6%92%AD%E5%9B%BE.md']">interview</a>
+      <a class="" [routerLink]="[ '/docs', 'Ajax%2FAjax%E7%AE%80%E8%BF%B0.md']">docs</a>
+      <a class="none" [routerLink]="[ '/culture', '%E6%B1%89%E6%9C%8D%E5%8F%A4%E9%A3%8E%2F%E6%B1%89%E6%9C%8D%E5%9B%BE%E7%89%87.md']">culture</a>
     </div>
   </mat-toolbar>
   <mat-sidenav-container class="example-sidenav-container"
@@ -23,7 +23,7 @@
             <a class="mat-list-title mat-list-active" [attr.aria-expanded]="active">{{property}}</a>
             <ul class="Secondary-data" [attr.aria-expanded]="active" #SecondaryData>
               <li class="Secondary-data-href" *ngFor="let item of matListItemData[property]" [title]="item.title">
-                <a [routerLink]="[$any(item.route), $any(item.href)]">{{item.title}}</a>
+                <a [routerLink]="[$any(item.route), $any(item.href) | EncodeURI]">{{item.title}}</a>
               </li>
             </ul>
           </li>

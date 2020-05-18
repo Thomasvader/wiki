@@ -26,6 +26,7 @@ import { FooterComponent } from './footer/footer.component';
 import { ApiService } from './service/apiService';
 import { BypassSecurityTrustHtmlPipe } from './pipeline/DomSanitizer';
 import { AppPropertiesPipe } from './pipeline/appProperties';
+import { EncodeURIPipe } from './pipeline/encodeURI';
 
 // Markdown
 
@@ -38,7 +39,8 @@ import { AppPropertiesPipe } from './pipeline/appProperties';
     FeaturesComponent,
     FooterComponent,
     BypassSecurityTrustHtmlPipe,
-    AppPropertiesPipe
+    AppPropertiesPipe,
+    EncodeURIPipe
   ],
   imports: [
     BrowserModule,

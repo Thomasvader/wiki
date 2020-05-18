@@ -1,5 +1,5 @@
 .app-features a {
-  color: #1976d2;
+  color: var(--wiki-background-color);
 }
 
 .app-features-homepage {
@@ -65,7 +65,7 @@ div[layout=row] {
   font-size: 20px;
   font-size: 2rem;
   font-weight: 500;
-  color: #1976d2;
+  color: var(--wiki-background-color);
   margin-top: 10px;
   text-transform: uppercase;
 }

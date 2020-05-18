@@ -21,7 +21,7 @@ const markdown = md({
 })
 export class InterviewComponent implements OnInit {
   public InitText: any = "";
-  private tempUrl: string = '';
+  public tempUrl: string = '';
 
   constructor(
     private api: ApiService,

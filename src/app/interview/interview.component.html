@@ -1,5 +1,9 @@
 <div class="interview-content content-size" id="content" [innerHTML]="InitText | bypassSecurityTrustHtml"></div>
 
+<div class="Edit" *ngIf="InitText !== ''">
+  <a [href]="'https://github.com/Aftersoil/Home/tree/master/'+tempUrl" target="_blank">Edit in GitHub</a>
+</div>
+
 <!-- app-footer start -->
 <app-footer *ngIf="InitText !== ''"></app-footer>
 <!-- app-footer end -->

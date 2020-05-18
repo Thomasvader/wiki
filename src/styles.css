@@ -4,6 +4,14 @@
 @import './assets/css/active.css';
 @import './assets/css/highlight.css';
 
+:root {
+  --wiki-background-color: #e91e63;
+  --wiki-background-color-Peach: #e91e63;
+  --wiki-background-color-black: #000;
+  --wiki-background-color-blue: #1976d2;
+  --wiki-background-color-pink: rgb(247, 207, 226);
+}
+
 html {
   font-size: 62.5%;
 }
