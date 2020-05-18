@@ -17,6 +17,9 @@
     padding: 0 10px !important;
   }
 
+  .Edit {
+    margin-left: 0 !important;
+  }
 }
 
 @media (min-width: 600px) {
