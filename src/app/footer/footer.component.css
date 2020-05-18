@@ -1,6 +1,6 @@
 footer {
   padding: 50px;
-  background-color: #1976d2;
+  background-color: var(--wiki-background-color);
   color: white;
   text-align: center;
 }

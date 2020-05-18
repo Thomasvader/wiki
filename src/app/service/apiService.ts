@@ -1,6 +1,6 @@
 import { Injectable } from "@angular/core";
-import { ApiStructure } from "../Serialization/Structure";
 import { HttpClient } from "@angular/common/http";
+import { ApiStructure } from "../Serialization/Structure";
 import { Observable } from "rxjs";
 import * as hljs from 'highlight.js';
 

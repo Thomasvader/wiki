@@ -22,7 +22,7 @@ const markdown = md({
 })
 export class DocxComponent implements OnInit {
   public InitText: any = "";
-  private tempUrl: string = '';
+  public tempUrl: string = '';
 
   constructor(
     private api: ApiService,
