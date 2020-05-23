@@ -54,7 +54,7 @@ import { EncodeURIPipe } from './pipeline/encodeURI';
     MatListModule,
     MatGridListModule,
     MatCardModule,
-    // material component end
+    // material component end,
     HttpClientModule,
     BrowserAnimationsModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
