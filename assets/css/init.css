@@ -8,8 +8,6 @@ a, a>em, input, input>em, li, li>em, ol, ol>em, p, p>em, ul, ul>em {
 }
 
 a, input, li, ol, p, ul {
-  font-size: 14px;
-  font-size: 1.4rem;
   line-height: 24px;
   line-height: 2.4rem;
   font-weight: 400;

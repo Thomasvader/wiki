@@ -23,6 +23,27 @@
   color: #00f;
 }
 
+.content-size h1 {
+  font-size: 2em;
+}
+
+.content-size h2 {
+  font-size: 1.5em;
+}
+
+.content-size h3 {
+}
+
+.content-size h4 {
+}
+
+.content-size h5 {
+}
+
+.content-size h2 > a {
+}
+
+
 .content-size a:hover {
   text-decoration: underline;
 }
