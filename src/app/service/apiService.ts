@@ -13,6 +13,27 @@ export class ApiService {
   }
 
   /**
+   * MenuHomeS
+   */
+  public MenuHomeS() {
+    let pres: any = document.querySelector('#Menu');
+    let absoluteC: any = document.querySelector('.absolute-C');
+
+    pres.onclick = function () {
+      let aria = this.getAttribute('aria-expanded');
+      
+      if (aria === "false") {
+        this.setAttribute('aria-expanded', true);
+        absoluteC.className = 'absolute-C absolute-active';
+      } else {
+        this.setAttribute('aria-expanded', false);
+        absoluteC.className = 'absolute-C';
+      }
+
+    }
+  }
+
+  /**
    * HighlightCode
    * 
    * 使用方法
