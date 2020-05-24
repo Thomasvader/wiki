@@ -7,3 +7,17 @@
 <!-- app-footer start -->
 <app-footer *ngIf="InitText !== ''"></app-footer>
 <!-- app-footer end -->
+
+<!-- Home start -->
+<div class="absolute-N" *ngIf="InitText !== ''">
+  <div class="absolute-Home"><a href="javascript:;" id="Menu" aria-expanded="false">Menu</a></div>
+  <div class="absolute-C">
+    <div class="absolute-nav">
+      <a [routerLink]="[ '/features']">features</a>
+      <a [routerLink]="[ '/interview', 'Front-End/%E6%97%A0%E7%BC%9D%E9%9A%99%E8%BD%AE%E6%92%AD%E5%9B%BE.md']">interview</a>
+      <a [routerLink]="[ '/docs', 'Ajax%2FAjax%E7%AE%80%E8%BF%B0.md']">docs</a>
+      <a [routerLink]="[ '/culture', '%E6%B1%89%E6%9C%8D%E5%8F%A4%E9%A3%8E%2F%E6%88%91%E7%9A%84%E6%B1%89%E6%9C%8D.md']">culture</a>
+    </div>
+  </div>
+</div>
+<!-- Home end -->

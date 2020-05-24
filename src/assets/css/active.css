@@ -1,16 +1,6 @@
 /* <button mat-icon-button class="mat-icon-button-active"><mat-icon>menu</mat-icon></button> */
-.mat-icon-button-active {
-  opacity: 0 !important;
-  width: 0 !important;
-  z-index: -999 !important;
-}
-
 .mat-sidenav-active {
   margin-left: -260px;
-}
-
-.mat-icon-button-active ~ h1 {
-  margin-left: 0 !important;
 }
 
 .Edit {
@@ -37,3 +27,58 @@
   box-shadow: 6px 6px 12px #d2caca;
 }
 
+.absolute-N .absolute-Home {
+  box-sizing: border-box;
+  width: 50px;
+  position: fixed;
+  background-color: var(--wiki-background-color);
+  bottom: 25px;
+  right: 25px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.absolute-N .absolute-Home > a{
+  width: 100%;
+  line-height: 50px;
+  text-align: center;
+  display: block;
+  color: white;
+  transition-duration: 250ms;
+}
+
+.absolute-N .absolute-C {
+  position: fixed;
+  background: var(--wiki-background-color);
+  bottom: 74px;
+  right: 25px;
+  width: 50px;
+  text-align: center;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+  opacity: 0;
+  z-index: -1;
+  transition-duration: 250ms;
+}
+
+.absolute-N .absolute-C .absolute-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.absolute-N .absolute-C .absolute-nav > a {
+  color: white;
+  font-size: 10px;
+  line-height: 50px;
+  transition-duration: 250ms;
+}
+
+.absolute-N .absolute-C .absolute-nav > a:hover,
+.absolute-N .absolute-Home a:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.absolute-active {
+  opacity: 1 !important;
+  z-index: 1 !important;
+}

@@ -49,10 +49,11 @@ export class InterviewComponent implements OnInit {
   
   ngOnInit() {
     console.log('%cinterview组件载入成功', 'color: #1976d2');
-
+    
     this.DisplayText();
     setTimeout(() => {
       this.api.HighlightCode();
+      this.api.MenuHomeS();
     }, 800);
 
     this.router.events.subscribe(event => {

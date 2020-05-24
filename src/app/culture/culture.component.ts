@@ -45,6 +45,7 @@ export class CultureComponent implements OnInit {
     this.DisplayText();
     setTimeout(() => {
       this.api.HighlightCode();
+      this.api.MenuHomeS();
     }, 800);
 
     this.router.events.subscribe(event => {
