@@ -20,6 +20,13 @@
   .Edit {
     margin-left: 0 !important;
   }
+
+  .example-app-name {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    transform: translateX(-30px);
+  }
+
 }
 
 @media (min-width: 600px) {
@@ -27,6 +34,21 @@
     height: calc(100% - 64px);
     margin-top: 0 !important;
   }
+
+  .mat-icon-button .mat-icon, .mat-icon-button i {
+    vertical-align: sub !important;
+  }
+  
+  .mat-icon-button-active {
+    opacity: 0 !important;
+    width: 0 !important;
+    z-index: -999 !important;
+  }
+
+  .absolute-N {
+    display: none;
+  }
+  
 }
 
 @media (max-width: 480px) {
