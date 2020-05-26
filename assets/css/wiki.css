@@ -82,3 +82,24 @@
   opacity: 1 !important;
   z-index: 1 !important;
 }
+
+.mat-drawer-backdrop.mat-drawer-shown {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table tr:nth-child(2n + 1) {
+  background-color: #f6f8fa;
+}
+
+table td {
+  border: 1px solid var(--wiki-background-color-black);
+  padding: 7px;
+}
+
+video {
+  width: 50%;
+}
