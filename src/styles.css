@@ -1,11 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 @import './assets/css/init.css';
 @import './assets/css/media.css';
-@import './assets/css/active.css';
+@import './assets/css/wiki.css';
 @import './assets/css/highlight.css';
 
 :root {
-  --wiki-background-color: #e91e63;
+  --wiki-background-color: #1976d2;
   --wiki-background-color-Peach: #e91e63;
   --wiki-background-color-black: #000;
   --wiki-background-color-blue: #1976d2;

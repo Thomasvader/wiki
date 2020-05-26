@@ -18,15 +18,15 @@ export class FooterComponent implements OnInit {
   constructor(
     private router: Router
   ) {
-    console.log(`%c${router.url.split('/')[1]}底部组件创建中`, 'color: #f00');
+    // console.log(`%c${router.url.split('/')[1]}底部组件创建中`, 'color: #f00');
   }
 
   ngOnInit() {
-    console.log(`%c${this.router.url.split('/')[1]}底部组件载入/创建成功`, 'color: #f00');
+    // console.log(`%c${this.router.url.split('/')[1]}底部组件载入/创建成功`, 'color: #f00');
   }
 
   ngOnDestroy() {
-    console.log(`%c${this.router.url.split('/')[1]}底部组件已销毁`, 'color: #f00')
+    // console.log(`%c${this.router.url.split('/')[1]}底部组件已销毁`, 'color: #f00')
   }
 
 }
