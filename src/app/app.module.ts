@@ -27,6 +27,7 @@ import { ApiService } from './service/apiService';
 import { BypassSecurityTrustHtmlPipe } from './pipeline/DomSanitizer';
 import { AppPropertiesPipe } from './pipeline/appProperties';
 import { EncodeURIPipe } from './pipeline/encodeURI';
+import { MediaMenuComponent } from './media-menu/media-menu.component';
 
 // Markdown
 
@@ -40,7 +41,8 @@ import { EncodeURIPipe } from './pipeline/encodeURI';
     FooterComponent,
     BypassSecurityTrustHtmlPipe,
     AppPropertiesPipe,
-    EncodeURIPipe
+    EncodeURIPipe,
+    MediaMenuComponent
   ],
   imports: [
     BrowserModule,

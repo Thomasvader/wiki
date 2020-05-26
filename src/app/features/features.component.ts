@@ -8,11 +8,11 @@ import { Component, OnInit } from '@angular/core';
 export class FeaturesComponent implements OnInit {
 
   constructor() {
-    console.log('%cfeatures 首页内容创建中', 'color: #d43cc8');
+    // console.log('%cfeatures 首页内容创建中', 'color: #d43cc8');
   }
   
   ngOnInit() {
-    console.log('%cfeatures 首页内容加载成功', 'color: #d43cc8');
+    // console.log('%cfeatures 首页内容加载成功', 'color: #d43cc8');
   }
 
 }

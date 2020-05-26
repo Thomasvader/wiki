@@ -29,7 +29,7 @@ export class AppComponent implements OnDestroy  {
 
   @HostListener('window.beforeinstallprompt')
   beforeinstallprompt(event) {
-    console.log(event);
+    // console.log(event);
     event.preventDefault();
     return false;
   }
@@ -43,14 +43,14 @@ export class AppComponent implements OnDestroy  {
     private title: Title,
     private api: ApiService
   ) {
-    console.log('初始化程序中', arguments);
-    console.log('%c左侧边栏创建中', 'color: #d27f19');
+    // console.log('初始化程序中', arguments);
+    // console.log('%c左侧边栏创建中', 'color: #d27f19');
 
     this.mobileQuery = media.matchMedia('(max-width: 600px)');
     this._mobileQueryListener = () => {
       changeDetectorRef.detectChanges();
 
-      console.log(`已检测到屏幕尺寸发送变化`, this.mobileQuery);
+      // console.log(`已检测到屏幕尺寸发送变化`, this.mobileQuery);
     };
     this.mobileQuery.addListener(this._mobileQueryListener);
     
@@ -108,7 +108,7 @@ export class AppComponent implements OnDestroy  {
 
   // get structure
   public DisplayMessage() {
-    console.log(`%c正在请求左侧边栏`, 'color: #d27f19');
+    // console.log(`%c正在请求左侧边栏`, 'color: #d27f19');
     this.api.StructureCallApi().subscribe(response => {
       
       for (const key in response) {
@@ -118,7 +118,7 @@ export class AppComponent implements OnDestroy  {
         }
       }
 
-      console.log('%c左侧边栏数据请求成功', 'color: #d27f19', this.path, this.matListItemData);
+      // console.log('%c左侧边栏数据请求成功', 'color: #d27f19', this.path, this.matListItemData);
     })
   }
   
@@ -138,9 +138,9 @@ export class AppComponent implements OnDestroy  {
   }
 
   ngOnInit(): void {
-    console.log('顶部导航创建成功');
-    console.log('%c左侧边栏创建成功', 'color: #d27f19');
-    console.log('首次加载数据在入中...');
+    // console.log('顶部导航创建成功');
+    // console.log('%c左侧边栏创建成功', 'color: #d27f19');
+    // console.log('首次加载数据在入中...');
 
   }
   

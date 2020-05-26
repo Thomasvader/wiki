@@ -28,7 +28,7 @@ export class InterviewComponent implements OnInit {
     private router: Router,
     private route: ActivatedRoute
   ) {
-    console.log('%cinterview组件创建中', 'color: #1976d2');
+    // console.log('%cinterview组件创建中', 'color: #1976d2');
 
   }
 
@@ -38,7 +38,7 @@ export class InterviewComponent implements OnInit {
     });
 
     // console.log(`%c${this.tempUrl}  数据请求中`, 'color: #1976d2');
-    console.log(this.tempUrl)
+    // console.log(this.tempUrl)
     this.api.InterviewTempContent(this.tempUrl).subscribe(response => {
       // console.log(response)
       this.InitText = markdown.render(response);
@@ -48,12 +48,11 @@ export class InterviewComponent implements OnInit {
   }
   
   ngOnInit() {
-    console.log('%cinterview组件载入成功', 'color: #1976d2');
+    // console.log('%cinterview组件载入成功', 'color: #1976d2');
     
     this.DisplayText();
     setTimeout(() => {
       this.api.HighlightCode();
-      this.api.MenuHomeS();
     }, 800);
 
     this.router.events.subscribe(event => {
