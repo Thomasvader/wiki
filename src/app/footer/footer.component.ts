@@ -11,6 +11,7 @@ export class FooterComponent implements OnInit {
   friendlyAddressUrl: object[] = [
     { "title": "Aftersoil", "href": "https://github.com/Aftersoil/" },
     { "title": "Wiki", "href": "./" },
+    { "title": "Demo", "href": "https://demo.aftersoil.xyz/" },
     { "title": "Issues", "href": "https://github.com/Aftersoil/Home/issues/new" },
     { "title": "Github", "href": "https://github.com/Aftersoil/" },
   ];
