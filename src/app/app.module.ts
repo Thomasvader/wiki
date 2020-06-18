@@ -28,6 +28,7 @@ import { BypassSecurityTrustHtmlPipe } from './pipeline/DomSanitizer';
 import { AppPropertiesPipe } from './pipeline/appProperties';
 import { EncodeURIPipe } from './pipeline/encodeURI';
 import { MediaMenuComponent } from './media-menu/media-menu.component';
+import { ThemeComponent } from './theme/theme.component';
 
 // Markdown
 
@@ -42,7 +43,8 @@ import { MediaMenuComponent } from './media-menu/media-menu.component';
     BypassSecurityTrustHtmlPipe,
     AppPropertiesPipe,
     EncodeURIPipe,
-    MediaMenuComponent
+    MediaMenuComponent,
+    ThemeComponent
   ],
   imports: [
     BrowserModule,

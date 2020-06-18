@@ -27,6 +27,14 @@
     transform: translateX(-30px);
   }
 
+  .theme {
+    top: 14px !important;
+  }
+
+  .theme-color {
+    top: 42px !important;
+  }
+
 
 }
 
@@ -77,6 +85,12 @@
   .Friendly-address > li + li {
     margin: 10px 0 !important;
   }
+  
+  #icon {
+    top: 16px !important;
+    left: 24px !important;
+  }
+
 }
 
 @media (max-width: 700px) {
@@ -88,4 +102,5 @@
   video {
     width: 100% !important;
   }
+
 }
