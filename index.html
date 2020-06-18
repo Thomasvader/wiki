@@ -7,25 +7,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="manifest" href="manifest.json">
-  <meta name="theme-color" content="#1976d2">
+  <meta id="metaColor" name="theme-color" content="#1976d2">
   <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.indigo-pink.min.css" />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <script src="./assets/js/pace.min.js"></script>
   <style>
   .pace{pointer-events:none;-webkit-user-select:none;-moz-user-select:none;user-select:none;position:absolute;width:100%;height:2px;z-index:1000;}.pace-inactive{display:none;}.pace .pace-progress{background:var(--wiki-background-color-black);z-index:2000;top:0;right:100%;width:100%;height:2px;}.pace .pace-progress-inner{display:block;position:absolute;right:0px;width:100px;height:100%;box-shadow:0 0 10px #29d,0 0 5px #29d;opacity:1.0;-webkit-transform:rotate(3deg) translate(0px,-4px);-moz-transform:rotate(3deg) translate(0px,-4px);-ms-transform:rotate(3deg) translate(0px,-4px);-o-transform:rotate(3deg) translate(0px,-4px);transform:rotate(3deg) translate(0px,-4px);}.pace .pace-activity{display:block;position:fixed;z-index:2000;top:20px;right:15px;width:20px;height:20px;border:solid 1px transparent;border-top-color:var(--wiki-background-color-black);border-left-color:var(--wiki-background-color-black);border-radius:10px;-webkit-animation:pace-spinner 400ms linear infinite;-moz-animation:pace-spinner 400ms linear infinite;-ms-animation:pace-spinner 400ms linear infinite;-o-animation:pace-spinner 400ms linear infinite;animation:pace-spinner 400ms linear infinite;}@-webkit-keyframes pace-spinner{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg);}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg);}}@-moz-keyframes pace-spinner{0%{-moz-transform:rotate(0deg);transform:rotate(0deg);}100%{-moz-transform:rotate(360deg);transform:rotate(360deg);}}@-o-keyframes pace-spinner{0%{-o-transform:rotate(0deg);transform:rotate(0deg);}100%{-o-transform:rotate(360deg);transform:rotate(360deg);}}@-ms-keyframes pace-spinner{0%{-ms-transform:rotate(0deg);transform:rotate(0deg);}100%{-ms-transform:rotate(360deg);transform:rotate(360deg);}}@keyframes pace-spinner{0%{transform:rotate(0deg);transform:rotate(0deg);}100%{transform:rotate(360deg);transform:rotate(360deg);}}
   </style>
-<link rel="stylesheet" href="styles.7e231b38313c889bbad0.css"></head>
+<link rel="stylesheet" href="styles.9234a92de36d91056dfb.css"></head>
 <body>
   <app-root></app-root>
-  <script>
-  paceOptions = {
-    ajax: true, // disabled
-    document: true, // disabled
-    eventLag: true, // disabled
-    elements: {
-      selectors: ['.my-page']
+  <script type="module">
+    import Aftersoil from './assets/js/Aftersoil.js';
+
+    // paceOptions = {
+    //   ajax: true, // disabled
+    //   document: true, // disabled
+    //   eventLag: true, // disabled
+    //   elements: {
+    //     selectors: ['.my-page']
+    //   }
+    // };
+
+    if (Aftersoil.getCookie("backgroundColor").value) {
+      // 首次加载更改颜色
+      document.getElementsByTagName("html")[0].style.cssText = `--wiki-background-color: ${Aftersoil.getCookie("backgroundColor").value}`;
+
+      
+      document.getElementById("metaColor").setAttribute('content', Aftersoil.getCookie("backgroundColor").value);
     }
-  };
   </script>
-<script type="text/javascript" src="runtime.a66f828dca56eeb90e02.js"></script><script type="text/javascript" src="polyfills.7a0e6866a34e280f48e7.js"></script><script type="text/javascript" src="main.1b5421bcc2a082dd32e1.js"></script></body>
+<script type="text/javascript" src="runtime.a66f828dca56eeb90e02.js"></script><script type="text/javascript" src="polyfills.7a0e6866a34e280f48e7.js"></script><script type="text/javascript" src="main.bb27a23c92458375637c.js"></script></body>
 </html>

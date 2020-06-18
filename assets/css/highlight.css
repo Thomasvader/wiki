@@ -20,7 +20,7 @@
 }
 
 .content-size a {
-  color: #00f;
+  color: var(--wiki-background-color);
 }
 
 .content-size h1 {
@@ -43,6 +43,21 @@
 .content-size h2 > a {
 }
 
+.content-size h1,
+.content-size h2,
+.content-size h3,
+.content-size h4,
+.content-size h5,
+.content-size h6,
+.content-size h1 a,
+.content-size h2 a,
+.content-size h3 a,
+.content-size h4 a,
+.content-size h5 a,
+.content-size h6 a {
+  color: var(--wiki-background-color);
+  font-weight: bold;
+}
 
 .content-size a:hover {
   text-decoration: underline;
