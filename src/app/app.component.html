@@ -1,9 +1,9 @@
 <div class="example-container" [class.example-is-mobile]="mobileQuery.matches">
-  <mat-toolbar color="primary" class="example-toolbar">
+  <mat-toolbar color="primary" class="example-toolbar"  data-trans="dura">
     <button mat-icon-button 
       (click)="snav.toggle()" 
       [ngClass]="{'mat-icon-button-active': matIconButtonActive}">
-        <mat-icon style="_vertical-align: sub;"><img src="./../assets/image/menu.png" width="24px" height="24px"></mat-icon>
+        <mat-icon style="_vertical-align: sub;"><img src="./../assets/image/menu.png" id="icon" width="24px" height="24px"></mat-icon>
     </button>
     <h1 class="example-app-name">Aftersoil wiki</h1>
     <div class="nav none">
@@ -12,6 +12,13 @@
       <a [routerLink]="[ '/docs', 'Ajax%2FAjax%E7%AE%80%E8%BF%B0.md']">docs</a>
       <a [routerLink]="[ '/culture', '%E6%B1%89%E6%9C%8D%E5%8F%A4%E9%A3%8E%2F%E6%88%91%E7%9A%84%E6%B1%89%E6%9C%8D.md']">culture</a>
     </div>
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <app-theme></app-theme>
+    <!--  -->
+    <!--  -->
+    <!--  -->
   </mat-toolbar>
   <!--  -->
   <!-- 左侧边栏 -->
@@ -38,7 +45,6 @@
                 <ng-template #elseTemplate>
                   <a [routerLink]="[$any(item.route), $any(item.href) | EncodeURI]">{{item.title}}</a>
                 </ng-template>
-                
 
               </li>
             </ul>
