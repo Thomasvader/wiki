@@ -13,10 +13,23 @@ export class ThemeComponent implements OnInit {
   // 颜色主题
   public themeColor: object[] = [
     { 'name': 'pink', 'color': '#e91e63' },
-    { 'name': 'blue', 'color': '#1976d2' },
-    { 'name': 'DPurple', 'color': '#673ab7' },
-    { 'name': 'Indigo', 'color': '#3f51b5' },
+    { 'name': '嫩粉', 'color': '#F48FB1' },
+    { 'name': '珊瑚粉', 'color': '#EB686D' },
+    { 'name': '荧光粉', 'color': '#FFAAB2' },
+    { 'name': '芭比粉', 'color': '#FA92B5' },
+    { 'name': 'Blue', 'color': '#1976d2' },
+    { 'name': '深蓝色', 'color': '#627ABC' },
+    { 'name': '晴空蓝', 'color': '#43BEC5' },
+    { 'name': 'Red', 'color': '#F44336' },
+    { 'name': '深红色', 'color': '#C92642' },
+    { 'name': '金红色', 'color': '#EC8A64' },
+    { 'name': '朱红色', 'color': '#E1534A' },
+    { 'name': 'Orange', 'color': '#FF9800' },
+    { 'name': '甜心橙', 'color': '#F5592C' },
     { 'name': 'Purple', 'color': '#9c27b0' },
+    { 'name': '深紫', 'color': '#673ab7' },
+    { 'name': 'Indigo', 'color': '#3f51b5' },
+    { 'name': 'Black', 'color': 'black' },
   ];
 
   constructor() { }
