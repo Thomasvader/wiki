@@ -26,7 +26,7 @@
     "@angular/service-worker": "^6.1.0",
     "core-js": "^2.5.7",
     "exif-js": "^2.3.0",
-    "highlight.js": "^10.0.3",
+    "highlight.js": "^10.4.1",
     "markdown-it": "^10.0.0",
     "marked": "^0.7.0",
     "prismjs": "^1.21.0",
